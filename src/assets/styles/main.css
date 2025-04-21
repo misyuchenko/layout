@@ -1,0 +1,20 @@
+@import './base.css';
+@import './fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 1px;
+  min-height: 100%;
+}
+
+#app {
+  font-family: 'Gilroy', sans-serif;
+  background-color: var(--app-color-primary);
+}
