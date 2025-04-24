@@ -1,10 +1,15 @@
 :root {
   --app-color-primary: #f5f3e9;
-
+  --app-color-white: #ffffff;
+  --app-color-black: #252525;
   --app-text-width-bold: 700;
   --app-text-width-light: 400;
+
+  --app-font-size-m: 20px;
   --app-font-size-l: 25px;
+  --app-font-size-xl: 30px;
   --app-font-size-xxl: 40px;
+  --app-font-size-xxxl: 80px;
   /* --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;

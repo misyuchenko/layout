@@ -8,8 +8,7 @@
 }
 
 html,
-body,
-#app {
+body {
   height: 1px;
   min-height: 100%;
 }
@@ -17,4 +16,13 @@ body,
 #app {
   font-family: 'Gilroy', sans-serif;
   background-color: var(--app-color-primary);
+  min-height: 100%;
+}
+
+#app ul {
+  list-style: none;
+}
+
+#app img {
+  width: 100%;
 }

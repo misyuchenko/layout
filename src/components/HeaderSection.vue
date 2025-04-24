@@ -5,7 +5,9 @@ import LogoIcon from '@/assets/svg/logo.svg'
 
 <template>
   <LimitedContainer tag="header" class="app-header">
-    <LogoIcon class="app-header__logo" />
+    <a href="#">
+      <LogoIcon class="app-header__logo" />
+    </a>
     <div class="app-header__menu">Menu</div>
   </LimitedContainer>
 </template>

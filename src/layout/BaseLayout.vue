@@ -8,6 +8,5 @@
 .base-layout {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding-inline: 20px; */
 }
 </style>
