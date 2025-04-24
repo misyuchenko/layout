@@ -2,12 +2,18 @@
 interface Props {
   tag?: keyof HTMLElementTagNameMap
   title?: string
+  hideBorder?: boolean
 }
-const { tag = 'div' } = defineProps<Props>()
+const { tag = 'div', hideBorder = false } = defineProps<Props>()
 </script>
 
 <template>
-  <Component :is="tag" class="limited-container" v-bind="$attrs">
+  <Component
+    :is="tag"
+    class="limited-container"
+    v-bind="$attrs"
+    :class="{ 'limited-container--hide-border': hideBorder }"
+  >
     <h2 v-if="title" class="limited-container__title">{{ title }}</h2>
     <slot></slot>
   </Component>
@@ -15,8 +21,12 @@ const { tag = 'div' } = defineProps<Props>()
 
 <style scoped>
 .limited-container {
-  border-top: 1px solid rgb(37, 37, 37);
   padding: 30px 20px;
+  border-top: 1px solid rgb(37, 37, 37);
+}
+
+.limited-container--hide-border {
+  border-top: unset;
 }
 
 .limited-container__title {

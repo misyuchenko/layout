@@ -20,7 +20,7 @@ console.log(companies)
 </script>
 
 <template>
-  <LimitedContainer tag="section" class="about-section">
+  <LimitedContainer tag="section" class="about-section" hide-border>
     <h2 class="about-section__title">
       <span>Dianne Russell</span> <br />
       <span>Digital Design</span>
